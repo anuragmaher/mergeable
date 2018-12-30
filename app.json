@@ -1,0 +1,33 @@
+{
+  "name": "mergeable",
+  "scripts": {
+  },
+  "env": {
+    "APP_ID": {
+      "required": true
+    },
+    "LOG_LEVEL": {
+      "required": true
+    },
+    "PRIVATE_KEY": {
+      "required": true
+    },
+    "WEBHOOK_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
