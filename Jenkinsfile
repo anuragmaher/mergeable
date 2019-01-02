@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'testing begins'
+                sh 'PATH=/usr/local/bin'
                 sh 'npm run test'
                 echo 'testing ends'
             }
