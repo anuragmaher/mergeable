@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
+                npm run test
             }
         }
         stage('Deploy') {
