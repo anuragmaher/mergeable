@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                npm run test
+                echo 'testing begins'
+                sh 'npm run test'
+                echo 'testing ends'
             }
         }
         stage('Deploy') {
